@@ -13,5 +13,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/magento-app/generated/
-/magento-app/pub/
+vendor/
+bin/
+dev/
+lib/
+pub/
+setup/
+var/
+generated/
+
+node_modules/

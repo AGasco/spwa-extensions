@@ -37,5 +37,6 @@ atlassian*
 /pub
 /setup
 /var
+/generated
 
 /node_modules
