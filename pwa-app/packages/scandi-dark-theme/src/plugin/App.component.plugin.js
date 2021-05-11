@@ -1,17 +1,18 @@
-import DarkModeProviderComponent from "../component/DarkModeProvider"
+import DarkModeProvider from "../component/DarkModeProvider/DarkModeProvider.container"
 
-export const render = (args, callback, instance) => {
+export const renderRouter = (args, callback, instance) => {
+    console.log("rendering darkmodeprovider");
     return (
-        <DarkModeProviderComponent >
+        <DarkModeProvider key="router" >
             { callback(...args) }
-        </DarkModeProviderComponent>
+        </DarkModeProvider>
     )
 }
 
 export default {
-    "App/Component": {
+    "Component/App/Component": {
         "member-function": {
-            render
+            renderRouter
         }
     }
 }

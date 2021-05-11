@@ -4,8 +4,10 @@ import DarkModeProvider from "./DarkModeProvider.component";
 
 /** @namespace ScandiDarkTheme/Component/DarkModeProvider/Container/mapStateToProps */
 export const mapStateToProps = (_state) => ({
-    isEnabled: _state.DarkModeReducer.enabled
+    isDarkModeEnabled: _state.DarkModeReducer.enabled
 });
 
+export const mapDispatchToProps = (_dispatch) => ({})
 
-export default connect(mapStateToProps)(DarkModeProvider)
+
+export default connect(mapStateToProps, mapDispatchToProps)(DarkModeProvider)
