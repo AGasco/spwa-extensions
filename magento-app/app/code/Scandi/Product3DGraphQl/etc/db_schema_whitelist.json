@@ -1,0 +1,16 @@
+{
+    "scandi_product_3d_model": {
+        "column": {
+            "id": true,
+            "product_id": true,
+            "url": true,
+            "file": true
+        },
+        "index": {
+            "SCANDI_PRODUCT_3D_MODEL_PRODUCT_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

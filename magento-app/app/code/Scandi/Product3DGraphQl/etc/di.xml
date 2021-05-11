@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Scandi\Product3DGraphQl\Api\Data\Model3DInterface"
+                type="Scandi\Product3DGraphQl\Model\Model3D"/>
+    <preference for="Scandi\Product3DGraphQl\Api\Data\Model3DSearchResultInterface"
+                type="Scandi\Product3DGraphQl\Model\Model3DSearchResult"/>
+    <preference for="Scandi\Product3DGraphQl\Api\Model3DRepositoryInterface"
+                type="Scandi\Product3DGraphQl\Model\Model3DRepository"/>
+
+    <type name="ScandiPWA\Performance\Model\Resolver\Products\DataPostProcessor">
+        <arguments>
+            <argument name="processors" xsi:type="array">
+                <item name="model_3d_urls" xsi:type="object">Scandi\Product3DGraphQl\Model\Resolver\Products\CollectionPostProcessor\Model3DProcessor</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

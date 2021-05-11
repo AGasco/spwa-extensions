@@ -1,0 +1,3 @@
+interface ProductInterface {
+    model_3d_urls: [String!]!
+}

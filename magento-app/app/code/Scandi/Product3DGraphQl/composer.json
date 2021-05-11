@@ -1,0 +1,31 @@
+{
+  "name": "scandi/product-3d-graph-ql",
+  "description": "3D product model configuration & GraphQl support",
+  "version": "0.0.1",
+  "type": "magento2-module",
+  "license": "OSL-3.0",
+  "authors": [
+    {
+      "name": "Reinis Mazeiks",
+      "email": "reinis.mazeiks@scandiweb.com",
+      "role": "Tutorial Teacher"
+    },
+    {
+      "name": "Antonio Gasco",
+      "email": "antonio.gasco@scandiweb.com",
+      "role": "Student"
+    }
+  ],
+  "require": {
+    "php": "7.4.*",
+    "magento/framework": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Scandi\\Product3DGraphQl\\": ""
+    }
+  }
+}
