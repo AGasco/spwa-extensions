@@ -4,7 +4,8 @@
     "license": "OSL-3.0",
     "dependencies": {
         "@scandipwa/scandipwa": "4.3.0",
-        "@scandipwa/scandipwa-scripts": "2.3.7"
+        "@scandipwa/scandipwa-scripts": "2.3.7",
+        "scandi-dark-theme": "file:packages/scandi-dark-theme"
     },
     "scandipwa": {
         "type": "theme",
@@ -12,11 +13,15 @@
             "en_US": true
         },
         "parentTheme": "@scandipwa/scandipwa",
-        "extensions": {}
+        "extensions": {
+            "scandi-dark-theme": true
+        }
     },
     "scripts": {
         "start": "scandipwa-scripts start",
-        "build": "scandipwa-scripts build"
+        "build": "scandipwa-scripts build",
+        "postinstall": "scandipwa-scripts link",
+        "postupdate": "scandipwa-scripts link"
     },
     "browserslist": {
         "production": [

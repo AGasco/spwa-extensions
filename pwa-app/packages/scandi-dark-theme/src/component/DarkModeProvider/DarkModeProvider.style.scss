@@ -1,0 +1,68 @@
+.DarkModeProvider {
+    &::after {
+        opacity: 0;
+        transition: opacity ease-out 100ms;
+        content: "";
+        display: block;
+        
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        z-index: 9999;
+        background-color: white;
+
+        mix-blend-mode: difference;
+
+        pointer-events: none;
+    }
+
+    &_isEnabled {
+        &::after {
+            opacity: 1;
+        }
+
+        --primary-error-color: #{adjust-hue(#dc6d6d, 180deg)};
+        --primary-success-color: #{adjust-hue(#7fcd91, 180deg)};
+        --primary-info-color: #{adjust-hue(#ffd166, 180deg)};
+
+        --primary-base-color: var(
+        --imported_primary_base_color,
+        #{adjust-hue($default-primary-base-color, 180deg)}
+        );
+        --primary-dark-color: var(
+        --imported_primary_dark_color,
+        #{adjust-hue($default-primary-dark-color, 180deg)}
+        );
+        --primary-light-color: var(
+        --imported_primary_light_color,
+        #{adjust-hue($default-primary-light-color, 180deg)}
+        );
+        --secondary-base-color: var(
+        --imported_secondary_base_color,
+        #{adjust-hue($default-secondary-base-color, 180deg)}
+        );
+        --secondary-dark-color: var(
+        --imported_secondary_dark_color,
+        #{adjust-hue($default-secondary-dark-color, 180deg)}
+        );
+        --secondary-light-color: var(
+        --imported_secondary_light_color,
+        #{adjust-hue($default-secondary-light-color, 180deg)}
+        );
+
+        --link-color: var(--primary-base-color);
+        --cart-overlay-totals-background: var(--secondary-base-color);
+        --overlay-desktop-border-color: var(--primary-light-color);
+        --menu-item-figure-background: var(--secondary-base-color);
+        --menu-item-hover-color: var(--primary-base-color);
+        --newsletter-subscription-placeholder-color: var(--secondary-dark-color);
+        --newsletter-subscription-button-background: var(--link-color);
+        --button-background: var(--primary-base-color);
+        --button-border: var(--primary-base-color);
+        --button-hover-background: var(--primary-dark-color);
+        --button-hover-border: var(--primary-base-color);
+    }
+}
