@@ -7,7 +7,7 @@ import DarkModeToggleButton from '../../packages/scandi-dark-theme/src/component
 export const renderTopMenu = (args, callback, instance) => (
     <>
         { callback(...args) }
-        <div block="Header" elem="BreathingModeToggle">
+        <div block="Header" elem="ExtensionsButtons">
             <ExtensionsButtonsComponent>
                 <BreathingModeToggleButton />
                 <DarkModeToggleButton />

@@ -15,7 +15,7 @@
         },
         "parentTheme": "@scandipwa/scandipwa",
         "extensions": {
-            "scandi-dark-theme": true,
+            "scandi-dark-theme": false,
             "scandi-breathing-pattern": true
         }
     },

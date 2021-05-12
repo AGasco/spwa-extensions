@@ -1,7 +1,30 @@
-.ExtensionsButtons {
-    max-width: 300px;
-    height: max-content;
-    max-height: 80px;
-    display:flex;
-    justify-content: space-between;
+.Header{
+    &-ExtensionsButtons{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    
+    
+    .ExtensionsButtons {
+        padding-left: 2vw;
+        padding-top: 10px;
+        max-width: 300px;
+        height: max-content;
+        max-height: 80px;
+        display:flex;
+        justify-content: space-between;
+    
+        button{
+            background-color: $default-primary-base-color;
+            color: $white;
+    
+            width: 175px;
+    
+            padding: 10px 5px;
+            margin: 0 5px;
+    
+            white-space: nowrap;
+        }
+    }
 }
+

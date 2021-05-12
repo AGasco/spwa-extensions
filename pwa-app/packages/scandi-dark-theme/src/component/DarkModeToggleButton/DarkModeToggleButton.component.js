@@ -20,7 +20,7 @@ export class DarkModeToggleButtonComponent extends PureComponent {
               // eslint-disable-next-line react/jsx-no-bind
               onClick={ () => enableDarkMode(!isDarkModeEnabled) }
             >
-                { __('Toggle Dark Mode') }
+                { __('Dark Mode') }
             </button>
         );
     }

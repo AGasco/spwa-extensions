@@ -20,7 +20,7 @@ export class BreathingModeToggleButtonComponent extends PureComponent {
               // eslint-disable-next-line react/jsx-no-bind
               onClick={ () => enableBreathingMode(!isBreathingModeEnabled) }
             >
-                { __('Toggle Breathing Mode') }
+                { __('Breathing Mode') }
             </button>
         );
     }
