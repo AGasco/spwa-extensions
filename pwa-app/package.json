@@ -5,7 +5,8 @@
     "dependencies": {
         "@scandipwa/scandipwa": "4.3.0",
         "@scandipwa/scandipwa-scripts": "2.3.7",
-        "scandi-dark-theme": "file:packages/scandi-dark-theme"
+        "scandi-dark-theme": "file:packages/scandi-dark-theme",
+        "scandi-breathing-pattern": "file:packages/scandi-breathing-pattern"
     },
     "scandipwa": {
         "type": "theme",
@@ -14,7 +15,8 @@
         },
         "parentTheme": "@scandipwa/scandipwa",
         "extensions": {
-            "scandi-dark-theme": true
+            "scandi-dark-theme": true,
+            "scandi-breathing-pattern": true
         }
     },
     "scripts": {

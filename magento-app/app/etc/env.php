@@ -1,19 +1,19 @@
 <?php
 return [
     'backend' => [
-        'frontName' => 'admin',
+        'frontName' => 'admin'
     ],
     'queue' => [
-        'consumers_wait_for_messages' => 1,
+        'consumers_wait_for_messages' => 1
     ],
     'crypt' => [
-        'key' => '7a04dfce0e327b74035de21c5035b749',
+        'key' => '7a04dfce0e327b74035de21c5035b749'
     ],
     'db' => [
         'table_prefix' => '',
         'connection' => [
             'default' => [
-                'host' => '127.0.0.1:3308',
+                'host' => '127.0.0.1:3311',
                 'dbname' => 'magento',
                 'username' => 'magento',
                 'password' => 'magento',
@@ -22,15 +22,15 @@ return [
                 'initStatements' => 'SET NAMES utf8;',
                 'active' => '1',
                 'driver_options' => [
-                    1014 => false,
-                ],
-            ],
-        ],
+                    1014 => false
+                ]
+            ]
+        ]
     ],
     'resource' => [
         'default_setup' => [
-            'connection' => 'default',
-        ],
+            'connection' => 'default'
+        ]
     ],
     'x-frame-options' => 'SAMEORIGIN',
     'MAGE_MODE' => 'developer',
@@ -38,7 +38,7 @@ return [
         'save' => 'redis',
         'redis' => [
             'host' => '127.0.0.1',
-            'port' => '6381',
+            'port' => '6384',
             'password' => '',
             'timeout' => '2.5',
             'persistent_identifier' => '',
@@ -58,45 +58,45 @@ return [
             'sentinel_master' => '',
             'sentinel_servers' => '',
             'sentinel_connect_retries' => '5',
-            'sentinel_verify_master' => '0',
-        ],
+            'sentinel_verify_master' => '0'
+        ]
     ],
     'cache' => [
         'frontend' => [
             'default' => [
-                'id_prefix' => '671_',
+                'id_prefix' => '529_',
                 'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis',
                 'backend_options' => [
                     'server' => '127.0.0.1',
                     'database' => '0t',
-                    'port' => '6381',
+                    'port' => '6384',
                     'password' => '',
                     'compress_data' => '1',
-                    'compression_lib' => '',
-                ],
+                    'compression_lib' => ''
+                ]
             ],
             'page_cache' => [
-                'id_prefix' => '671_',
-            ],
+                'id_prefix' => '529_'
+            ]
         ],
         'allow_parallel_generation' => false,
         'persisted-query' => [
             'redis' => [
                 'host' => 'localhost',
-                'port' => '6381',
+                'port' => '6384',
                 'database' => '5',
-                'scheme' => 'tcp',
-            ],
-        ],
+                'scheme' => 'tcp'
+            ]
+        ]
     ],
     'lock' => [
         'provider' => 'db',
         'config' => [
-            'prefix' => '',
-        ],
+            'prefix' => ''
+        ]
     ],
     'directories' => [
-        'document_root_is_pub' => false,
+        'document_root_is_pub' => false
     ],
     'cache_types' => [
         'config' => 1,
@@ -114,11 +114,12 @@ return [
         'config_webservice' => 1,
         'translate' => 1,
         'vertex' => 1,
-        'persisted_query_response' => 1,
+        'persisted_query_response' => 1
     ],
     'downloadable_domains' => [
+
     ],
     'install' => [
-        'date' => 'Tue, 11 May 2021 10:18:20 +0000',
-    ],
+        'date' => 'Wed, 12 May 2021 08:11:37 +0000'
+    ]
 ];

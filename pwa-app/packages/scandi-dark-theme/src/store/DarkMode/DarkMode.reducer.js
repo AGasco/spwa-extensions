@@ -14,8 +14,7 @@ export const DarkModeReducer = (state = getInitialState(), action) => {
         return {
             ...state,
             enabled
-        }
-
+        };
     default:
         return state;
     }
